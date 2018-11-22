@@ -33,6 +33,7 @@ import 'core-js/es6/regexp';
 import 'core-js/es6/map';
 import 'core-js/es6/weak-map';
 import 'core-js/es6/set';
+import 'core-js/es6/promise';
 
 /**
  * If the application will be indexed by Google Search, the following is required.
@@ -47,7 +48,12 @@ import 'core-js/es6/set';
 /** IE10 and IE11 requires the following for the Reflect API. */
 import 'core-js/es6/reflect';
 import 'core-js/es7/reflect';
-import 'core-js/es7/object'
+
+import 'core-js/es7/object';
+import 'core-js/es7/promise';
+
+
+
 /**
  * Web Animations `@angular/platform-browser/animations`
  * Only required if AnimationBuilder is used within the application and using IE/Edge or Safari.
@@ -70,14 +76,11 @@ import 'core-js/es7/object'
 */
 // (window as any).__Zone_enable_cross_context_check = true;
 
-import '@webcomponents/custom-elements/src/native-shim'
-
-import '@webcomponents/custom-elements/custom-elements.min'
+import '@webcomponents/webcomponentsjs/webcomponents-loader.js'
 /***************************************************************************************************
  * Zone JS is required by default for Angular itself.
  */
-import 'zone.js/dist/zone';  // Included with Angular CLI.
-(window as any).global = window
+
 
 /***************************************************************************************************
  * APPLICATION IMPORTS
